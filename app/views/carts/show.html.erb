@@ -1,0 +1,10 @@
+<h1>Your Cart</h1>
+<% @cart.each do |product| %>
+  <div>
+    <h2><%= product.name %></h2>
+    <p><%= number_to_currency(product.price) %></p>
+    <%= button_to 'Remove', remove_from_cart_cart_path(product_id: product.id), method: :delete %>
+  </div>
+<% end %>
+<p>Total: <%= number_to_currency(@total) %></p>
+<%= link_to 'Checkout', new_payment_path %>

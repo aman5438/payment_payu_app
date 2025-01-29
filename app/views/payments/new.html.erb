@@ -1,0 +1,12 @@
+<h1>Checkout</h1>
+
+<%= form_with url: payments_path, method: :post do |form| %>
+  <p>Total Amount: <%= number_to_currency(@total) %> INR</p>
+  <%= submit_tag "Pay with PayU", class: "btn btn-success" %>
+<% end %>
+
+
+<%= form_with url: payments_path, method: :post do %>
+  <p>Total Amount: <%= @total_amount %> INR</p>
+  <%= submit_tag "Pay with PayU", class: "btn btn-success" %>
+<% end %>

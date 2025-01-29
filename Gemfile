@@ -48,6 +48,9 @@ gem 'devise', '~> 4.9' # For user authentication
 gem 'payuindia', '~> 0.1.1' # For PayU payment gateway
 gem 'bootstrap', '~> 5.3' # For styling
 gem 'dotenv-rails', groups: [:development, :test] # For environment variables
+gem 'httparty'
+gem 'pry'
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
